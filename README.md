@@ -33,3 +33,5 @@
 
 * 管理员界面
 > ![MU1S4s.png](https://s2.ax1x.com/2019/11/14/MU1S4s.png)
+
+感谢：本项目使用了 [liaokong]("https://github.com/liaokongVFX") 使用 PySide开发的对话框主题
