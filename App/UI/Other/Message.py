@@ -1,3 +1,8 @@
+# -*- coding:utf-8 -*-
+__author__ = "liaokong"
+__time__ = "2018/10/16 14:16"
+__link__ = "https://github.com/liaokongVFX/QFlat/blob/master/MessageWidget.py"
+
 from PySide2 import QtWidgets as PySideQWidgets
 from PySide2 import QtCore as PySideQtCore
 
@@ -413,7 +418,8 @@ class MessageAsk(PySideQWidgets.QDialog):
             self.m_flag = True
             self.m_Position = event.globalPos() - self.pos()
             event.accept()
-            self.setCursor(PySideQWidgets.QCursor(PySideQtCore.Qt.OpenHandCursor))
+            self.setCursor(PySideQWidgets.QCursor(
+                PySideQtCore.Qt.OpenHandCursor))
 
     def mouseMoveEvent(self, event):
         if QtCore.Qt.LeftButton and self.m_flag:
@@ -422,7 +428,7 @@ class MessageAsk(PySideQWidgets.QDialog):
 
     def mouseReleaseEvent(self, event):
         self.m_flag = False
-        self.setCursor( PySideQWidgets.QCursor(QtCore.Qt.ArrowCursor))
+        self.setCursor(PySideQWidgets.QCursor(QtCore.Qt.ArrowCursor))
 
 
 def message(msg, msg_type="info"):
